@@ -5,9 +5,13 @@
   extractValues({a: 1, b: 2, c: 3}) debería retornar [1, 2, 3]
 */
 
-function extractValues(data) {
+
   // Tu código aquí
-}
+  function extractValues(data) {
+    return Object.values(data);
+  }
+
+
 
 /*  
   Ejercicio 2: 
