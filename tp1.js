@@ -11,8 +11,6 @@
     return Object.values(data);
   }
 
-
-
 /*  
   Ejercicio 2: 
   Implementar la función 'arrayToLengthCounters' que toma un array de strings y retorna un objeto donde cada elemento
@@ -20,11 +18,19 @@
   Ejemplo: 
   arrayToLengthCounters(['gato', 'perro', 'elefante']) debería retornar {gato: 4, perro: 5, elefante: 8}
 */
-
-function arrayToLengthCounters(array) {
+ 
   // Tu código aquí
-}
-
+  function arrayToLengthCounters(array) {
+    let result = {};
+    for (let i = 0; i < array.length; i++) {
+    let key = array[i];
+    let value = key.length;
+    result[key] = value;
+    }
+    return result;
+    }
+   
+    // Output: { gato: 4, perro: 5, elefante: 8 }
 /*  
   Ejercicio 3: 
   Implementar la función 'findKeysInCommon' que toma dos objetos y retorna un array con los nombres de las 
