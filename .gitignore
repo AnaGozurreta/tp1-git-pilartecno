@@ -1,5 +1,6 @@
 #Super mega clave que no debe ser rastreada por GIT
 .env
 #package.json
-.json
-node_modules
+package.json
+node_modules/
+package-lock.json
